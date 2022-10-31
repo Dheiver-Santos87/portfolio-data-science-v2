@@ -1,85 +1,85 @@
-# Machine Learning with scikit-learn Quick Start Guide
+# Machine Learning com scikit-learn Guia de início rápido
 
-<a href="https://www.packtpub.com/big-data-and-business-intelligence/machine-learning-scikit-learn-quick-start-guide?utm_source=github&utm_medium=repository&utm_campaign=9781789343700 "><img src="https://d1ldz4te4covpm.cloudfront.net/sites/default/files/imagecache/ppv4_main_book_cover/B11248.png" alt="Machine Learning with scikit-learn Quick Start Guide" height="256px" align="right"></a>
+<a href="https://www.packtpub.com/big-data-and-business-intelligence/machine-learning-scikit-learn-quick-start-guide?utm_source=github&utm_medium=repository&utm_campaign=9781789343700 "><img src="https://d1ldz4te4covpm.cloudfront.net/sites/default/files/imagecache/ppv4_main_book_cover/B11248.png" alt="Machine Learning with scikit-learn Quick Start Guide" height="256px" align="right" ></a>
 
-This is the code repository for [Machine Learning with scikit-learn Quick Start Guide](https://www.packtpub.com/big-data-and-business-intelligence/machine-learning-scikit-learn-quick-start-guide?utm_source=github&utm_medium=repository&utm_campaign=9781789343700 ), published by Packt.
+Este é o repositório de código para [Machine Learning with scikit-learn Quick Start Guide](https://www.packtpub.com/big-data-and-business-intelligence/machine-learning-scikit-learn-quick-start- guide?utm_source=github&utm_medium=repository&utm_campaign=9781789343700 ), publicado por Packt.
 
-**Classification, regression, and clustering techniques in Python**
+**Técnicas de classificação, regressão e agrupamento em Python**
 
-## What is this book about?
-Scikit-learn is a robust machine learning library for the Python programming language. It provides a set of supervised and unsupervised learning algorithms. This book is the easiest way to learn how to deploy, optimize, and evaluate all of the important machine learning algorithms that scikit-learn provides.
+## Sobre o que é esse livro?
+Scikit-learn é uma biblioteca robusta de aprendizado de máquina para a linguagem de programação Python. Ele fornece um conjunto de algoritmos de aprendizado supervisionado e não supervisionado. Este livro é a maneira mais fácil de aprender como implantar, otimizar e avaliar todos os importantes algoritmos de aprendizado de máquina que o scikit-learn fornece.
 
-This book covers the following exciting features:
-* Learn how to work with all scikit-learn's machine learning algorithms 
-* Install and set up scikit-learn to build your first machine learning model 
-* Employ Unsupervised Machine Learning Algorithms to cluster unlabelled data into groups 
-* Perform classification and regression machine learning 
-* Use an effective pipeline to build a machine learning project from scratch 
+Este livro abrange os seguintes recursos interessantes:
+* Aprenda a trabalhar com todos os algoritmos de aprendizado de máquina do scikit-learn
+* Instale e configure o scikit-learn para construir seu primeiro modelo de aprendizado de máquina
+* Empregar algoritmos de aprendizado de máquina não supervisionados para agrupar dados não rotulados em grupos
+* Realize o aprendizado de máquina de classificação e regressão
+* Use um pipeline eficaz para criar um projeto de aprendizado de máquina do zero
 
-If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1789343704) today!
+Se você acha que este livro é para você, adquira sua [cópia](https://www.amazon.com/dp/1789343704) hoje mesmo!
 
-<a href="https://www.packtpub.com/?utm_source=github&utm_medium=banner&utm_campaign=GitHubBanner"><img src="https://raw.githubusercontent.com/PacktPublishing/GitHub/master/GitHub.png" 
+<a href="https://www.packtpub.com/?utm_source=github&utm_medium=banner&utm_campaign=GitHubBanner"><img src="https://raw.githubusercontent.com/PacktPublishing/GitHub/master/GitHub.png"
 alt="https://www.packtpub.com/" border="5" /></a>
 
-## Instructions and Navigations
-All of the code is organized into folders. For example, Chapter02.
+## Instruções e Navegações
+Todo o código é organizado em pastas. Por exemplo, Capítulo02.
 
-The code will look like the following:
+O código terá a seguinte aparência:
 ```
-from sklearn.naive_bayes import GaussianNB
+de sklearn.naive_bayes importar GaussianNB
 
-#Initializing an NB classifier
+#Inicializando um classificador NB
 
 nb_classifier = GaussianNB()
 
-#Fitting the classifier into the training data
+#Ajustando o classificador aos dados de treinamento
 
 nb_classifier.fit(X_train, y_train)
 ```
 
-**Following is what you need for this book:**
-This book is for aspiring machine learning developers who want to get started with scikit-learn. Intermediate knowledge of Python programming and some fundamental knowledge of linear algebra and probability will help.	
+**O que você precisa para este livro é o seguinte:**
+Este livro é para aspirantes a desenvolvedores de aprendizado de máquina que desejam começar com o scikit-learn. Conhecimento intermediário de programação Python e algum conhecimento fundamental de álgebra linear e probabilidade ajudarão.
 
-With the following software and hardware list you can run all code files present in the book (Chapter 1-8).
-### Software and Hardware List
-| Chapter | Software required | OS required |
+Com a lista de software e hardware a seguir, você pode executar todos os arquivos de código presentes no livro (Capítulo 1-8).
+### Lista de Software e Hardware
+| Capítulo | Software necessário | SO necessário |
 | -------- | ------------------------------------ | ----------------------------------- |
 | 1 | Pandas (= 0.23.4) Matplotlib (= 3.0.0) Scikit-learn (= 0.20.0) Tree (Latest) NumPy (= 1.15.1 Pydotplus (= 2.0.2) Image (= 5.3.0) | Windows, Mac OS X |
-| 2 | Pandas (= 0.23.4) Scikit-learn (= 0.20.0) | Windows, Mac OS X |
-| 3 | Pandas (= 0.23.4) Scikit-learn (= 0.20.0) | Windows, Mac OS X |
-| 4 | Pandas (= 0.23.4) Scikit-learn (= 0.20.0) | Windows, Mac OS X |
-| 5 | Pandas (= 0.23.4) Scikit-learn (= 0.20.0) | Windows, Mac OS X |
-| 6 | Pandas (0.23.4) Scikit-learn (= 0.20.0) Tree (Latest) NumPy (= 1.15.1) ydotplus (= 2.0.2) IL (= 5.3.0) | Windows, Mac OS X |
-| 7 | Pandas (= 0.23.4) Scikit-learn (= 0.20.0) | Windows, Mac OS X |
-| 8 | Pandas (= 0.23.4) Scikit-learn (= 0.20.0) Scikit-plot (= 0.3.7) | Windows, Mac OS X |
+| 2 | Pandas (= 0,23,4) Scikit-learn (= 0,20,0) | Windows, Mac OS X |
+| 3 | Pandas (= 0,23,4) Scikit-learn (= 0,20,0) | Windows, Mac OS X |
+| 4 | Pandas (= 0,23,4) Scikit-learn (= 0,20,0) | Windows, Mac OS X |
+| 5 | Pandas (= 0,23,4) Scikit-learn (= 0,20,0) | Windows, Mac OS X |
+| 6 | Pandas (0.23.4) Scikit-learn (= 0.20.0) Árvore (mais recente) NumPy (= 1.15.1) ydotplus (= 2.0.2) IL (= 5.3.0) | Windows, Mac OS X |
+| 7 | Pandas (= 0,23,4) Scikit-learn (= 0,20,0) | Windows, Mac OS X |
+| 8 | Pandas (= 0,23,4) Scikit-learn (= 0,20,0) Scikit-plot (= 0,3,7) | Windows, Mac OS X |
 
-## Code in Action
+## Código em ação
 
-Click on the following link to see the Code in Action:
+Clique no link a seguir para ver o Código em Ação:
 
 [http://bit.ly/2OcWIGH](http://bit.ly/2OcWIGH)
 
 
-### Related products
-* Python Machine Learning Blueprints - Second Edition [[Packt]](https://www.packtpub.com/big-data-and-business-intelligence/python-machine-learning-blueprints-second-edition?utm_source=github&utm_medium=repository&utm_campaign=9781788994170 ) [[Amazon]](https://www.amazon.com/dp/B07JLMHWRG)
+### Produtos relacionados
+* Python Machine Learning Blueprints - Segunda Edição [[Packt]](https://www.packtpub.com/big-data-and-business-intelligence/python-machine-learning-blueprints-second-edition?utm_source=github&utm_medium= repositório&utm_campaign=9781788994170 ) [[Amazon]](https://www.amazon.com/dp/B07JLMHWRG)
 
-* scikit-learn Cookbook [[Packt]](https://www.packtpub.com/big-data-and-business-intelligence/scikit-learn-cookbook?utm_source=github&utm_medium=repository&utm_campaign=9781783989485 ) [[Amazon]](https://www.amazon.com/dp/1783989483)
+* Livro de receitas do scikit-learn [[Packt]](https://www.packtpub.com/big-data-and-business-intelligence/scikit-learn-cookbook?utm_source=github&utm_medium=repository&utm_campaign=9781783989485 ) [[Amazon]] (https://www.amazon.com/dp/1783989483)
 
 
-## Get to Know the Author
+## Conheça o autor
 **Kevin Jolly**
-is a formally educated data scientist with a master's degree in data science from the prestigious King's College London. Kevin works as a statistical analyst with a digital healthcare start-up, Connido Limited, in London, where he is primarily involved in leading the data science projects that the company undertakes. He has built machine learning pipelines for small and big data, with a focus on scaling such pipelines into production for the products that the company has built. 
+é um cientista de dados formalmente educado com mestrado em ciência de dados pelo prestigioso King's College London. Kevin trabalha como analista estatístico em uma startup de saúde digital, a Connido Limited, em Londres, onde está principalmente envolvido na liderança dos projetos de ciência de dados que a empresa realiza. Ele construiu pipelines de aprendizado de máquina para pequenos e grandes dados, com foco em dimensionar esses pipelines para a produção dos produtos que a empresa construiu.
 
-Kevin is also the author of a book titled Hands-On Data Visualization with Bokeh, published by Packt. He is the editor-in-chief of Linear, a weekly online publication on data science software and products. 
+Kevin também é autor de um livro intitulado Hands-On Data Visualization with Bokeh, publicado pela Packt. Ele é o editor-chefe da Linear, uma publicação online semanal sobre software e produtos de ciência de dados.
 
-## Other books by the authors
-[Hands-On Data Visualization with Bokeh](https://www.packtpub.com/big-data-and-business-intelligence/hands-data-visualization-bokeh?utm_source=github&utm_medium=repository&utm_campaign=9781789135404 )
+## Outros livros dos autores
+[Visualização de dados prática com Bokeh](https://www.packtpub.com/big-data-and-business-intelligence/hands-data-visualization-bokeh?utm_source=github&utm_medium=repository&utm_campaign=9781789135404 )
 
-### Suggestions and Feedback
-[Click here](https://docs.google.com/forms/d/e/1FAIpQLSdy7dATC6QmEL81FIUuymZ0Wy9vH1jHkvpY57OiMeKGqib_Ow/viewform) if you have any feedback or suggestions.
+### Sugestões e comentários
+[Clique aqui](https://docs.google.com/forms/d/e/1FAIpQLSdy7dATC6QmEL81FIUuymZ0Wy9vH1jHkvpY57OiMeKGqib_Ow/viewform) se tiver comentários ou sugestões.
 
 
-### Download a free PDF
+### Baixe um PDF gratuito
 
- <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+ <i>Se você já comprou uma versão impressa ou Kindle deste livro, pode obter uma versão em PDF sem DRM sem nenhum custo.<br>Basta clicar no link para reivindicar seu PDF gratuito.</i>
 <p align="center"> <a href="https://packt.link/free-ebook/9781789343700">https://packt.link/free-ebook/9781789343700 </a> </p>
